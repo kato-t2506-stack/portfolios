@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>偉人なりきりメーカー</title>
+    <meta charset="utf-8">
+    <script src="./main.js" defer></script>
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+    <div id="header">
+        <div id="icons">
+            <div id="functions">
+                <!--ペイントボタン-->
+                <button class="function" id="paint">🎨</button>
+                <!--カメラボタン-->
+                <button class="function" id="camera">📷</button>
+            </div>
+            <div id="tools">
+                <!--パレット-->
+                <input type="color" id="color" class="hide">
+            </div>
+        </div>
+    </div>
+    <div id="out">
+        <div id="main">
+            <div id="photo">
+                <!--肖像画-->
+                <canvas id="face" width="300" height="300"></canvas>
+                <!--ビデオ-->
+                <video id="video" class="hide" width="300" height="300" autoplay>
+                </video>
+            </div>
+            <!--名前-->
+            <div id="full_name" contenteditable="true" >佐藤　清救  </div>
+            <!--生没年-->
+            <div id="birth" contenteditable="true" >(1838 ～ 1871)</div>
+            <!--プロフィール-->
+            <div id="profile" contenteditable="true">
+                佐藤清救（さとう　きよすく）は、明治時代の日本において鉄道網の
+発展に大きく寄付した技師である。
+                 1838年、松前藩の商家に生まれた清救は、幼少期から機会に強い
+興味を持ち、
+                 明示維新後の西洋技術の流入期にその才能を発揮した。
+                 政府の奨学金を受けてイギリスに留学した清救はロンドン大学で
+機械工学を学び、
+                 帰国後は内務省土木局に入省し日本初の国産鉄道建設プロジェクト
+に携わることとなった。
+                 彼はその開業を見届ける前に亡くなったが、生前に切望していた
+「駅舎内の売店設置」は後進らの尽力によって無事達成された
+</div>
+        </div>
+        <!--落書きエリア-->
+        <canvas id="rakugaki" class="hide"></canvas>
+    </div>
+    <!--アップロードボタン(隠し)-->
+    <input type="file"  id="file">
+    <div id="footer">偉人なりきりメーカー</div>
+</body>
+
+</html>
